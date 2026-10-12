@@ -82,6 +82,7 @@ button{font:inherit;border:0;cursor:pointer;color:inherit;background:none}
 .sp.red{background:rgba(191,30,44,.1);color:var(--red)}
 .sp.miss{background:rgba(14,15,12,.06);color:var(--muted);font-weight:500}
 .pr{padding-top:2px;font-weight:700;font-size:20px}
+.sc .nm{height:auto} /* titles take only the lines they need (still max 2) */
 .sc .pr{margin-top:auto;line-height:26px} /* equal-height cards: price and buttons sit at the bottom */
 .sc .cta{height:36px;padding-top:0;padding-bottom:0}
 .sc .sv{height:34px;padding-top:0;padding-bottom:0}
@@ -176,8 +177,8 @@ const other = [
   {n:"iVenus", l:"ivenus", c:"black", t:"iPhone 15", sp:[S.x("Storage & color not listed")], p:66900, sv:"Save ₹3,345 more"},
   {n:"Girias", l:"girias", c:"pink", t:"Apple iPhone 15 (128 GB) - Pink", sp:[S.m("128 GB"),S.w("⚠ Pink")], p:89900, sv:"Save ₹1,798 more"},
   {n:"Sathya", l:"sathya", c:"blue", t:"Apple iPhone 15 (128 GB) - Blue", sp:[S.m("128 GB"),S.w("⚠ Blue")], soft:"Price on site", btn:"View price", sv:"Save 2% more"},
-  {n:"Shopsy", l:"shopsy", c:"black", t:"Apple iPhone 15 (128 GB) - Black", sp:[S.w("Price looks wrong"),S.r("Out of stock"),S.m("128 GB")], p:5000, wrong:true, grey:true, sv:"Save ₹250 more"},
-  {n:"JioMart", l:"jiomart", c:"black", t:"Apple iPhone 15 (128 GB) - Black", sp:[S.w("Price looks wrong"),S.m("128 GB"),S.m("Black")], soft:"Needs location", loc:true, sv:"Save ₹230 more"},
+  {n:"Shopsy", l:"shopsy", c:"black", t:"Apple iPhone 15 (128 GB) - Black", sp:[S.w("Wrong price"),S.r("Out of stock"),S.m("128 GB")], p:5000, wrong:true, grey:true, sv:"Save ₹250 more"},
+  {n:"JioMart", l:"jiomart", c:"black", t:"Apple iPhone 15 (128 GB) - Black", sp:[S.w("Wrong price"),S.m("128 GB"),S.m("Black")], soft:"Needs location", loc:true, sv:"Save ₹230 more"},
 ];
 
 const tile = (img, name, rate, arrow) => `<div class="tile"><div class="top"><img src="${A}logos/${img}" alt=""><span>${name}</span></div>
